@@ -1,0 +1,4 @@
+[
+null,
+{"id":1,"battlerName":"MyCustom_Battler","characterIndex":0,"characterName":"MyCustom_Walk","classId":1,"equips":[0,0,0,0],"faceIndex":0,"faceName":"MyCustomFace","traits":[{"code":51,"dataId":1,"value":1},{"code":51,"dataId":2,"value":1},{"code":51,"dataId":3,"value":1},{"code":51,"dataId":4,"value":1},{"code":51,"dataId":5,"value":1},{"code":51,"dataId":6,"value":1},{"code":52,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Hiro","nickname":"","note":"","profile":""}
+]
