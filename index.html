@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Logo.png" type="image/png">
+
+    <title>Dragnius Page</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Set Inter as the default sans-serif font
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Example custom colors (optional)
+                        primary: '#3490dc', // Example blue
+                        secondary: '#ffed4a', // Example yellow
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4CKNG870W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z4CKNG870W');
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">Dragnius</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+             <a href="#about" class="block text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+             <a href="#projects" class="block text-gray-600 hover:text-blue-600 transition duration-300">Projects</a>
+             <a href="#contact" class="block text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="hero" class="text-center py-12 md:py-16">
+            <h1 class="text-3xl md:text-5xl font-bold mb-3">Hi, I'm Dragnius</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-6">Computer Science Student | Aspiring Software Engineer</p>
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 text-base inline-block">View My Work</a>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mb-16 md:mb-24 p-8 md:p-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    Driven Computer Science student with a strong foundation in programming, problem-solving, and a passion for technology. My practical experience includes engineering and designing web platforms using JavaScript, HTML, and CSS.
+                </p>
+                 <p>
+                    Beyond coding, I have a creative side fueled by my interest in game design and development. When I'm not refining my programming skills, I am planning, designing and developing games. This passion drives my design-oriented approach, further supported by my certifications in Adobe Photoshop and Illustrator. I enjoy bringing ideas to life through interactive experiences.
+                </p>
+                <p>
+                    Actively seeking opportunities in the Software development field. Open to Internships as well as full-time work.
+                </p>
+                <div class="pt-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-center md:text-left">Key Technical Skills</h3>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                        <span class="bg-yellow-200 text-gray-600 text-sm font-medium mr-2 px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-orange-300 text-neutral-900 text-sm font-medium mr-2 px-3 py-1 rounded-full">HTML</span>
+                        <span class="bg-sky-300 text-neutral-50 text-sm font-medium mr-2 px-3 py-1 rounded-full">CSS</span>
+                        <span class="bg-blue-400 text-yellow-200 text-sm font-medium mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-red-100 text-rose-800 text-sm font-medium mr-2 px-3 py-1 rounded-full">Java</span>
+                        <span class="bg-blue-400 text-neutral-50 text-sm font-medium mr-2 px-3 py-1 rounded-full">C++</span>
+                        <span class="bg-blue-800 text-sky-300 text-sm font-medium mr-2 px-3 py-1 rounded-full">Adobe Photoshop</span>
+                        <span class="bg-orange-700 text-orange-300 text-sm font-medium mr-2 px-3 py-1 rounded-full">Adobe Illustrator</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-3 py-1 rounded-full">Git</span> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 md:py-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="Summit1.png"
+                         alt="Game Project Screenshot"
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/999999?text=Image+Error';">
+                   <div class="p-6">
+                       <h3 class="text-xl font-semibold mb-2">Journey to the Summit</h3>
+                       <p class="text-gray-600 mb-4">
+                           A classic RPG game made using RPG Maker MZ. Follows the journey of a boy on his way to save his father.
+                       </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-200 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Game Dev</span>
+                            <span class="bg-red-200 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">RPG Maker MZ</span>
+                            <span class="bg-yellow-200 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Action RPG</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code</a>
+                                <a href="https://notdragnius.github.io/Summit/" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">Play Game</a>
+                            </div>
+                   </div>
+               </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/333333?text=Project+Placeholder"
+                         alt="Project 1 Screenshot"
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/999999?text=Image+Error';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">
+                            Project description
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                             <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Tech Tag 1</span>
+                             <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Tech Tag 2</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code (GitHub)</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                     <img src="https://placehold.co/600x400/dbeafe/333333?text=Project+Placeholder"
+                          alt="Project 2 Screenshot"
+                          class="w-full h-48 object-cover"
+                          onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/999999?text=Image+Error';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">
+                            Project description
+                        </p>
+                         <div class="flex flex-wrap gap-2 mb-4">
+                             <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Tech Tag 3</span>
+                             <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Tech Tag 4</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code (GitHub)</a>
+                        </div>
+                    </div>
+                </div>
+                
+                </div> </section>
+
+        <section id="contact" class="text-center py-16 md:py-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+                I'm currently looking for software engineering opportunities. Feel free to reach out if you'd like to connect or discuss potential roles!
+            </p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <a href="https://github.com/NotDragnius" target="_blank" rel="noopener" class="text-gray-600 hover:text-blue-600 transition duration-300" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                     </svg>
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition duration-300" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                </a> -->
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 text-center py-6">
+        <p>© 2025 Dragnius. All rights reserved.</p>
+        </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked (optional)
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
